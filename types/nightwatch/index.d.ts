@@ -2276,7 +2276,7 @@ export interface NightwatchBrowser extends NightwatchAPI, NightwatchCustomComman
 export type NightwatchTest = (browser: NightwatchBrowser) => void;
 
 export interface NightwatchTests {
-    [key: string]: NightwatchTest;
+    [key: string]: NightwatchTest | string;
 }
 
 /**
